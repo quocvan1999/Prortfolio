@@ -1,0 +1,176 @@
+/* HEADER */
+.header{
+    top: 0;
+    left: 0;
+}
+/* Nav Right */
+.nav__list ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    display: block;
+    transition: all .5s;
+    background: var(--color_2);
+}
+
+.nav__list ul li:hover::after{
+    width: 100%;
+}
+
+.nav__list ul li:hover a{
+    color: var(--color_2);
+}
+
+.nav__list ul>.active::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    display: block;
+    transition: all .5s;
+    background: var(--color_2);
+}
+
+.nav__list ul>.active a{
+    color: var(--color_2);
+}
+
+/* CAROUCEL */
+.carousel-item{
+    height: 100vh;
+    position: relative;
+}
+
+.carousel-item::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(102, 102, 102, 0.466);
+    
+}
+
+.carousel-caption{
+    top: 30%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: var(--color_2);
+}
+
+/* PROJECT */
+.project .nav-pills{
+    gap: 10px;
+}
+
+.project .nav-pills li:hover button{
+    color: var(--color_3);
+}
+
+.project .nav-pills li .active{
+    background-color: var(--color_2);
+}
+
+.project .tab-content .card>div{
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, .13);
+    cursor: pointer;
+}
+
+.project .tab-content .card>div:hover .card-body{
+    border-bottom: 1px solid var(--color_2);
+    border-left: 1px solid var(--color_2);
+    border-right: 1px solid var(--color_2);
+}
+
+.project .tab-content .card>div:hover .card-body h3{
+    color: var(--color_2);
+}
+
+/* FEATURE */
+.feature{
+    background-image: url("../images/3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.feature__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(7,10,12,.72);
+}
+
+.feature__item{
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .1);
+    transition: all .5s;
+}
+
+.feature__item:hover{
+    border: 1px solid white;
+    background: black;
+}
+
+/* AWARD */
+.award{
+    background-image: url('../images/memphis_3.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.award::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.466);
+}
+
+.award__left{
+    background: rgba(255, 255, 255, .25);
+    border: 1px solid rgba(255, 255, 255, .18);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
+}
+
+/* FOOTER */
+.footer__top>div{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--color_4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.footer__top>div:hover{
+    border: 1px solid var(--color_2);
+    color: var(--color_2);
+}
+
+.footer__top>div svg{
+    line-height: 35px;
+}
+
+.footer__bottom p{
+    border-top: 1px solid #454545;
+}
+
+.footer__bottom p a:hover{
+    color: var(--color_2);
+}

@@ -1,0 +1,88 @@
+/* GLOBAL */
+html{
+    background-color: var(--color_5);
+}
+
+html,
+body {
+    font-family: "Hind", sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --color_1: #FFFFFF;
+    --color_2: #35A22C;
+    --color_3: #1A1D2D;
+    --color_4: #888888;
+    --color_5: #222222;
+}
+
+/* CLASS CUSTOM */
+
+/* TEXT */
+.text__color1{
+    color: var(--color_1);
+}
+
+.text__color2{
+    color: var(--color_2);
+}
+
+.text__color3{
+    color: var(--color_3);
+}
+
+
+.text__color4{
+    color: var(--color_4);
+}
+
+/* BACKGROUND */
+.bg__1{
+    background-color: var(--color_1);
+}
+
+.bg__2{
+    background-color: var(--color_2);
+}
+
+.bg__3{
+    background-color: var(--color_3);
+}
+
+.bg__4{
+    background-color: var(--color_4);
+}
+
+.bg__5{
+    background-color: var(--color_5);
+}
+
+/* FONT WEIGHT */
+.fw__3{
+    font-weight: 300;
+}
+
+.fw__4{
+    font-weight: 400;
+}
+
+.fw__5{
+    font-weight: 500;
+}
+
+.fw__6{
+    font-weight: 600;
+}
+
+.fw__7{
+    font-weight: 700;
+}
+
+/* DELAY ANIMATE */
+.transition-delay05{
+    transition: all .5s;
+}
+
+
+
